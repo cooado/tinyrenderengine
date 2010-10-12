@@ -1,0 +1,49 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ColladaOptimizer", "ColladaOptimizer\ColladaOptimizer.vcxproj", "{8E1CE379-AB19-4901-A34E-4F324D66C2EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ColladaOptimizerTest", "ColladaOptimizerTest\ColladaOptimizerTest.vcxproj", "{1CDD7251-51C3-41D8-82D8-D6215F2688ED}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Editor", "Editor\Editor.vcxproj", "{F53A4EA8-7E19-451C-818C-6A53F79BF21E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EditorUI", "EditorUI\EditorUI.vcxproj", "{6FA6D58E-3EF5-4C97-AD54-5DEF15E56CA7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MainApp", "MainApp\MainApp.vcxproj", "{59CDDE6D-A435-41E7-A8FF-D2184BE7C56D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RenderEngine", "TinyRenderEngine\TinyRenderEngine.vcxproj", "{CB2F662A-B283-4038-9A2E-91456BEA0456}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E1CE379-AB19-4901-A34E-4F324D66C2EB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8E1CE379-AB19-4901-A34E-4F324D66C2EB}.Debug|Win32.Build.0 = Debug|Win32
+		{8E1CE379-AB19-4901-A34E-4F324D66C2EB}.Release|Win32.ActiveCfg = Release|Win32
+		{8E1CE379-AB19-4901-A34E-4F324D66C2EB}.Release|Win32.Build.0 = Release|Win32
+		{1CDD7251-51C3-41D8-82D8-D6215F2688ED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1CDD7251-51C3-41D8-82D8-D6215F2688ED}.Debug|Win32.Build.0 = Debug|Win32
+		{1CDD7251-51C3-41D8-82D8-D6215F2688ED}.Release|Win32.ActiveCfg = Release|Win32
+		{1CDD7251-51C3-41D8-82D8-D6215F2688ED}.Release|Win32.Build.0 = Release|Win32
+		{F53A4EA8-7E19-451C-818C-6A53F79BF21E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F53A4EA8-7E19-451C-818C-6A53F79BF21E}.Debug|Win32.Build.0 = Debug|Win32
+		{F53A4EA8-7E19-451C-818C-6A53F79BF21E}.Release|Win32.ActiveCfg = Release|Win32
+		{F53A4EA8-7E19-451C-818C-6A53F79BF21E}.Release|Win32.Build.0 = Release|Win32
+		{6FA6D58E-3EF5-4C97-AD54-5DEF15E56CA7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6FA6D58E-3EF5-4C97-AD54-5DEF15E56CA7}.Debug|Win32.Build.0 = Debug|Win32
+		{6FA6D58E-3EF5-4C97-AD54-5DEF15E56CA7}.Release|Win32.ActiveCfg = Release|Win32
+		{6FA6D58E-3EF5-4C97-AD54-5DEF15E56CA7}.Release|Win32.Build.0 = Release|Win32
+		{59CDDE6D-A435-41E7-A8FF-D2184BE7C56D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{59CDDE6D-A435-41E7-A8FF-D2184BE7C56D}.Debug|Win32.Build.0 = Debug|Win32
+		{59CDDE6D-A435-41E7-A8FF-D2184BE7C56D}.Release|Win32.ActiveCfg = Release|Win32
+		{59CDDE6D-A435-41E7-A8FF-D2184BE7C56D}.Release|Win32.Build.0 = Release|Win32
+		{CB2F662A-B283-4038-9A2E-91456BEA0456}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB2F662A-B283-4038-9A2E-91456BEA0456}.Debug|Win32.Build.0 = Debug|Win32
+		{CB2F662A-B283-4038-9A2E-91456BEA0456}.Release|Win32.ActiveCfg = Release|Win32
+		{CB2F662A-B283-4038-9A2E-91456BEA0456}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
