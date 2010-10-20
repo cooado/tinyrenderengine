@@ -5,7 +5,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Game_Development\SDKs\collada-dom\dom\include;D:\Game_Development\SDKs\collada-dom\dom\include\1.4;D:\Game_Development\SDKs\boost\boost_1_43_0\include\boost-1_43;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\External\collada-dom_1.0\include;..\..\External\collada-dom_1.0\include\1.4;..\..\External\Boost_1_43;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>dom.lib;libxml2_a.lib;zlib.lib;wsock32.lib;pcre.lib;pcrecpp.lib;minizip.lib;libboost_filesystem-vc100-mt-1_43.lib;libboost_system-vc100-mt-1_43.lib;%(AdditionalDependencies)</AdditionalDependencies>
