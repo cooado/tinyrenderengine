@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>Workstation</author>
+			<authoring_tool>COLLADAMax NextGen;  Version: 1.1.0;  Platform: Win32;  Configuration: Release Max2009</authoring_tool>
+			<source_data>file:///D:/Game_Development/VS_Workspace/TinyRenderEngine_v2.0/Media/Max/Material_Texture.max</source_data>
+		</contributor>
+		<created>2009-10-23T14:50:26</created>
+		<modified>2009-10-23T14:50:26</modified>
+		<unit meter="0.0254" name="inch"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_effects>
+		<effect id="ColorEffectR0G0B0">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<ambient>
+							<color>0 0 0 1</color>
+						</ambient>
+						<diffuse>
+							<color>0 0 0 1</color>
+						</diffuse>
+						<specular>
+							<color>1 1 1 1</color>
+						</specular>
+						<shininess>
+							<float>10</float>
+						</shininess>
+						<reflective>
+							<color>0 0 0 1</color>
+						</reflective>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+		</effect>
+		<effect id="_1_-_Default">
+			<profile_COMMON>
+				<newparam sid="tropicalseafish_bmp-surface">
+					<surface type="2D">
+						<init_from>tropicalseafish_bmp</init_from>
+					</surface>
+				</newparam>
+				<newparam sid="tropicalseafish_bmp-sampler">
+					<sampler2D>
+						<source>tropicalseafish_bmp-surface</source>
+					</sampler2D>
+				</newparam>
+				<technique sid="common">
+					<phong>
+						<emission>
+							<color>0 0 0 1</color>
+						</emission>
+						<ambient>
+							<color>0.760784 0.607843 0.576471 1</color>
+						</ambient>
+						<diffuse>
+							<texture texture="tropicalseafish_bmp-sampler" texcoord="CHANNEL1"/>
+						</diffuse>
+						<specular>
+							<color>0.9 0.9 0.9 1</color>
+						</specular>
+						<shininess>
+							<float>10</float>
+						</shininess>
+						<reflective>
+							<color>0 0 0 1</color>
+						</reflective>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+			<extra>
+				<technique profile="3dsMaxNextGen">
+					<extended_shader>
+						<apply_reflection_dimming>0</apply_reflection_dimming>
+						<dim_level>0</dim_level>
+						<falloff_type>0</falloff_type>
+						<index_of_refraction>1.5</index_of_refraction>
+						<opacity_type>0</opacity_type>
+						<reflection_level>3</reflection_level>
+						<wire_size>1</wire_size>
+						<wire_units>0</wire_units>
+					</extended_shader>
+					<shader>
+						<ambient_diffuse_lexture_lock>1</ambient_diffuse_lexture_lock>
+						<ambient_diffuse_lock>0</ambient_diffuse_lock>
+						<diffuse_specular_lock>0</diffuse_specular_lock>
+						<soften>0.1</soften>
+						<use_self_illum_color>0</use_self_illum_color>
+					</shader>
+				</technique>
+			</extra>
+		</effect>
+		<effect id="ColorEffectR87G120B204">
+			<profile_COMMON>
+				<technique sid="common">
+					<phong>
+						<ambient>
+							<color>0.341176 0.470588 0.8 1</color>
+						</ambient>
+						<diffuse>
+							<color>0.341176 0.470588 0.8 1</color>
+						</diffuse>
+						<specular>
+							<color>1 1 1 1</color>
+						</specular>
+						<shininess>
+							<float>10</float>
+						</shininess>
+						<reflective>
+							<color>0 0 0 1</color>
+						</reflective>
+						<transparent>
+							<color>1 1 1 1</color>
+						</transparent>
+						<transparency>
+							<float>1</float>
+						</transparency>
+					</phong>
+				</technique>
+			</profile_COMMON>
+			<extra>
+				<technique profile="3dsMaxNextGen">
+					<extended_shader>
+						<apply_reflection_dimming>0</apply_reflection_dimming>
+						<dim_level>0</dim_level>
+						<falloff_type>0</falloff_type>
+						<index_of_refraction>1.5</index_of_refraction>
+						<opacity_type>0</opacity_type>
+						<reflection_level>3</reflection_level>
+						<wire_size>1</wire_size>
+						<wire_units>0</wire_units>
+					</extended_shader>
+					<shader>
+						<ambient_diffuse_lexture_lock>1</ambient_diffuse_lexture_lock>
+						<ambient_diffuse_lock>0</ambient_diffuse_lock>
+						<diffuse_specular_lock>0</diffuse_specular_lock>
+						<soften>0.1</soften>
+						<use_self_illum_color>0</use_self_illum_color>
+					</shader>
+				</technique>
+			</extra>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="ColorEffectR0G0B0-material" name="ColorEffectR0G0B0-material">
+			<instance_effect url="#ColorEffectR0G0B0"/>
+		</material>
+		<material id="ColorEffectR87G120B204-material" name="ColorEffectR87G120B204-material">
+			<instance_effect url="#ColorEffectR87G120B204"/>
+		</material>
+		<material id="_1_-_Default-material" name="_1_-_Default-material">
+			<instance_effect url="#_1_-_Default"/>
+		</material>
+	</library_materials>
+	<library_geometries>
+		<geometry id="geom-Box01" name="Box01">
+			<mesh>
+				<source id="geom-Box01-positions">
+					<float_array id="geom-Box01-positions-array" count="72">-13.2679 0 -13.2699 -13.2679 0 13.2699 13.2679 0 13.2699 13.2679 0 -13.2699 -13.2679 21.6836 -13.2699 13.2679 21.6836 -13.2699 13.2679 21.6836 13.2699 -13.2679 21.6836 13.2699 -13.2679 0 -13.2699 13.2679 0 -13.2699 13.2679 21.6836 -13.2699 -13.2679 21.6836 -13.2699 13.2679 0 -13.2699 13.2679 0 13.2699 13.2679 21.6836 13.2699 13.2679 21.6836 -13.2699 13.2679 0 13.2699 -13.2679 0 13.2699 -13.2679 21.6836 13.2699 13.2679 21.6836 13.2699 -13.2679 0 13.2699 -13.2679 0 -13.2699 -13.2679 21.6836 -13.2699 -13.2679 21.6836 13.2699</float_array>
+					<technique_common>
+						<accessor count="24" source="#geom-Box01-positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geom-Box01-normals">
+					<float_array id="geom-Box01-normals-array" count="72">0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 1 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 1 -1 0 0 -1 0 0 -1 0 0 -1 0 0</float_array>
+					<technique_common>
+						<accessor count="24" source="#geom-Box01-normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geom-Box01-map-channel1">
+					<float_array id="geom-Box01-map-channel1-array" count="72">1 1 0 1 0 0 0 0 0 0 1 0 0 1 0 1 1 0 1 0 0 0 0 0 0 1 0 1 1 0 1 0 0 0 0 0 0 1 0 1 1 0 1 0 0 0 0 0 0 1 0 1 1 0 1 0 0 0 0 0 0 1 0 1 1 0 1 0 0 0 0 0</float_array>
+					<technique_common>
+						<accessor count="24" source="#geom-Box01-map-channel1-array" stride="3">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+							<param name="P" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="geom-Box01-vertices">
+					<input semantic="POSITION" source="#geom-Box01-positions"/>
+				</vertices>
+				<triangles count="12" material="_1_-_Default_1">
+					<input offset="0" semantic="VERTEX" source="#geom-Box01-vertices" set="0"/>
+					<input offset="0" semantic="NORMAL" source="#geom-Box01-normals" set="0"/>
+					<input offset="0" semantic="TEXCOORD" source="#geom-Box01-map-channel1" set="1"/>
+					<p>0 2 1 2 0 3 4 6 5 6 4 7 8 10 9 10 8 11 12 14 13 14 12 15 16 18 17 18 16 19 20 22 21 22 20 23</p>
+				</triangles>
+			</mesh>
+			<extra>
+				<technique profile="3dsMaxNextGen">
+					<max_box>
+						<generateuvs>1</generateuvs>
+						<height>21.6836</height>
+						<heightsegments>1</heightsegments>
+						<length>26.5397</length>
+						<lengthsegments>1</lengthsegments>
+						<width>26.5359</width>
+						<widthsegments>1</widthsegments>
+					</max_box>
+				</technique>
+			</extra>
+		</geometry>
+	</library_geometries>
+	<library_cameras>
+		<camera id="Camera01-camera" name="Camera01">
+			<optics>
+				<technique_common>
+					<perspective>
+						<xfov>45</xfov>
+						<znear>1</znear>
+						<zfar>1000</zfar>
+					</perspective>
+				</technique_common>
+			</optics>
+		</camera>
+	</library_cameras>
+	<library_lights>
+		<light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+			<technique_common>
+				<ambient>
+					<color>0 0 0</color>
+				</ambient>
+			</technique_common>
+		</light>
+	</library_lights>
+	<library_images>
+		<image id="tropicalseafish_bmp" height="0" width="0">
+			<init_from>./images/tropicalseafish.bmp</init_from>
+		</image>
+	</library_images>
+	<library_visual_scenes>
+		<visual_scene id="MaxScene">
+			<node name="EnvironmentAmbientLight">
+				<instance_light url="#EnvironmentAmbientLight"/>
+			</node>
+			<node id="node-Box01" name="Box01">
+				<matrix>1 0 0 0 0 1 0 0 0 0 1 0 6.93054 0 0.737671 1</matrix>
+				<instance_geometry url="#geom-Box01">
+					<bind_material>
+						<technique_common>
+							<instance_material symbol="_1_-_Default_1" target="#_1_-_Default-material"/>
+						</technique_common>
+					</bind_material>
+				</instance_geometry>
+			</node>
+			<node id="node-Camera01" name="Camera01">
+				<matrix>-0.0761293 0.0169279 -0.996954 0 0.217057 0.976159 -9.31323e-008 0 0.973186 -0.216396 -0.0779886 -0 -99.2095 37.5601 2.31283 1</matrix>
+				<instance_camera url="#Camera01-camera"/>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#MaxScene"/>
+	</scene>
+</COLLADA>

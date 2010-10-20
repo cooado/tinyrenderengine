@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>Workstation</author>
+			<authoring_tool>NVIDIA FX Composer 2.5</authoring_tool>
+			<comments/>
+			<copyright/>
+		</contributor>
+		<created>2009-10-31T08:46:46Z</created>
+		<keywords>FXComposer, NVIDIA</keywords>
+		<modified>2009-10-31T09:55:29Z</modified>
+		<subject/>
+		<title/>
+		<unit/>
+		<up_axis>Y_UP</up_axis>
+	</asset>
+	<library_visual_scenes>
+		<visual_scene id="DefaultScene" name="DefaultScene">
+			<node sid="__fxc_remove_node"/>
+			<extra type="evaluatescene_enables">
+				<technique profile="NVIDIA_FXCOMPOSER"/>
+			</extra>
+		</visual_scene>
+	</library_visual_scenes>
+	<library_effects>
+		<effect id="Effect" name="MouseShader">
+			<profile_COMMON>
+				<technique sid="__fxc_remove_profile_COMMON">
+					<constant/>
+				</technique>
+			</profile_COMMON>
+			<extra type="import">
+				<technique profile="NVIDIA_FXCOMPOSER">
+					<import url="../MouseShader.fx" compiler_options="" profile="fx"/>
+				</technique>
+			</extra>
+		</effect>
+	</library_effects>
+	<library_materials>
+		<material id="MouseShader" name="MouseShader_Material">
+			<instance_effect url="#Effect">
+				<technique_hint platform="PC-D3D10" ref="RenderMouse"/>
+				<setparam ref="MouseParam">
+					<float4>0 0 0.05 0.006</float4>
+				</setparam>
+				<setparam ref="Mouse">
+					<surface type="2D">
+						<init_as_null/>
+						<format>A8R8G8B8</format>
+						<size>0 0 1</size>
+					</surface>
+				</setparam>
+			</instance_effect>
+		</material>
+	</library_materials>
+	<scene>
+		<instance_visual_scene url="#DefaultScene"/>
+	</scene>
+</COLLADA>

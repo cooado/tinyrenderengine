@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>Workstation</author>
+			<authoring_tool>COLLADAMax NextGen;  Version: 1.1.0;  Platform: Win32;  Configuration: Release Max2009</authoring_tool>
+		</contributor>
+		<created>2009-09-23T21:45:35</created>
+		<modified>2009-09-23T21:45:35</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_geometries>
+		<geometry id="geom-Brick" name="Brick">
+			<mesh>
+				<source id="geom-Brick-positions">
+					<float_array id="geom-Brick-positions-array" count="12">1 2 3 4 5 6 7 8 9 10 11 12</float_array>
+					<technique_common>
+						<accessor count="4" source="#geom-Brick-positions-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geom-Brick-normals">
+					<float_array id="geom-Brick-normals-array" count="12">1 2 3 4 5 6 7 8 9 10 11 12</float_array>
+					<technique_common>
+						<accessor count="4" source="#geom-Brick-normals-array" stride="3">
+							<param name="X" type="float"/>
+							<param name="Y" type="float"/>
+							<param name="Z" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<source id="geom-Brick-map-channel1">
+					<float_array id="geom-Brick-map-channel1-array" count="12">1 1 1 2 2 2 3 3 3 4 4 4</float_array>
+					<technique_common>
+						<accessor count="4" source="#geom-Brick-map-channel1-array" stride="3">
+							<param name="S" type="float"/>
+							<param name="T" type="float"/>
+							<param name="P" type="float"/>
+						</accessor>
+					</technique_common>
+				</source>
+				<vertices id="geom-Brick-vertices">
+					<input semantic="POSITION" source="#geom-Brick-positions"/>
+				</vertices>
+				<triangles count="1" material="ColorMaterial">
+					<input offset="0" semantic="VERTEX" source="#geom-Brick-vertices" set="0"/>
+					<input offset="1" semantic="NORMAL" source="#geom-Brick-normals" set="0"/>
+					<input offset="2" semantic="TEXCOORD" source="#geom-Brick-map-channel1" set="1"/>
+					<p>0 0 0 1 0 0 2 0 0</p>
+				</triangles>
+			</mesh>
+		</geometry>
+	</library_geometries>
+	<library_visual_scenes>
+		<visual_scene id="MaxScene">
+			<node id="node-Brick" name="Brick">
+				<translate>5.03858 -3.24329 0</translate>
+				<instance_geometry url="#geom-Brick">
+				</instance_geometry>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#MaxScene"/>
+	</scene>
+</COLLADA>

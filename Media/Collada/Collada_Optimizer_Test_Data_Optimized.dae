@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+	<asset>
+		<contributor>
+			<author>Workstation</author>
+			<authoring_tool>COLLADAMax NextGen;  Version: 1.1.0;  Platform: Win32;  Configuration: Release Max2009</authoring_tool>
+		</contributor>
+		<created>2009-09-23T21:45:35</created>
+		<modified>2009-09-23T21:45:35</modified>
+		<unit meter="0.01" name="centimeter"/>
+		<up_axis>Z_UP</up_axis>
+	</asset>
+	<library_visual_scenes>
+		<visual_scene id="MaxScene">
+			<node id="node-Brick" name="Brick">
+				<translate>5.03858 -3.24329 0</translate>
+			</node>
+		</visual_scene>
+	</library_visual_scenes>
+	<scene>
+		<instance_visual_scene url="#MaxScene"/>
+	</scene>
+</COLLADA>
