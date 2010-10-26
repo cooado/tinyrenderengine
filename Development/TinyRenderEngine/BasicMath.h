@@ -1,7 +1,7 @@
 #ifndef _TRE_BASICMATH_H__
 #define _TRE_BASICMATH_H__
 
-#include <Platform.h>
+#include "Platform.h"
 #include <memory>
 
 namespace TRE

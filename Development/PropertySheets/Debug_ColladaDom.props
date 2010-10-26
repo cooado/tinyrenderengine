@@ -9,7 +9,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>dom.lib;libxml2_a.lib;zlib.lib;wsock32.lib;pcred.lib;pcrecppd.lib;minizip-d.lib;libboost_filesystem-vc100-mt-gd-1_43.lib;libboost_system-vc100-mt-gd-1_43.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\Game_Development\SDKs\collada-dom\dom\build\vc9-1.4-d;D:\Game_Development\SDKs\boost\boost_1_43_0\lib;D:\Game_Development\SDKs\collada-dom\dom\external-libs\libxml2\win32\lib;D:\Game_Development\SDKs\collada-dom\dom\external-libs\minizip\win32\lib;D:\Game_Development\SDKs\collada-dom\dom\external-libs\pcre\lib\vc10;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\..\External\collada-dom_1.0\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
 </Project>
