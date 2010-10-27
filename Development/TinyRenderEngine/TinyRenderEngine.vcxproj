@@ -34,6 +34,7 @@
     <Import Project="..\PropertySheets\Release_ColladaDom.props" />
     <Import Project="..\PropertySheets\Release_TinyRT.props" />
     <Import Project="..\PropertySheets\Release_OIS.props" />
+    <Import Project="..\PropertySheets\Release_Boost.props" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
@@ -41,6 +42,7 @@
     <Import Project="..\PropertySheets\Debug_ColladaDom.props" />
     <Import Project="..\PropertySheets\Debug_TinyRT.props" />
     <Import Project="..\PropertySheets\Debug_OIS.props" />
+    <Import Project="..\PropertySheets\Debug_Boost.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>

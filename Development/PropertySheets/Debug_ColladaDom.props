@@ -5,10 +5,10 @@
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <AdditionalIncludeDirectories>..\..\External\collada-dom_1.0\include;..\..\External\collada-dom_1.0\include\1.4;..\..\External\Boost_1_43;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\External\collada-dom_1.0\include;..\..\External\collada-dom_1.0\include\1.4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>dom.lib;libxml2_a.lib;zlib.lib;wsock32.lib;pcred.lib;pcrecppd.lib;minizip-d.lib;libboost_filesystem-vc100-mt-gd-1_43.lib;libboost_system-vc100-mt-gd-1_43.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>dom.lib;libxml2_a.lib;zlib.lib;wsock32.lib;pcred.lib;pcrecppd.lib;minizip-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\External\collada-dom_1.0\lib\debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
