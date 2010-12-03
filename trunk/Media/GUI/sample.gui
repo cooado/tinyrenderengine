@@ -1,0 +1,35 @@
+<node type="Window" name="CreateGroupUI">
+    <property name="BackImage" value="801503300" />
+    <property name="PosX" value="284" />
+    <property name="PosY" value="382" />
+    <property name="SizeX" value="272" />
+    <property name="SizeY" value="158" />
+    <node type="Button" name="close">
+        <property name="BackImage" value="800200500" />
+        <property name="PosX" value="238" />
+        <property name="PosY" value="14" />
+        <property name="SizeX" value="20" />
+        <property name="SizeY" value="18" />
+    </node>
+    <node type="Edit" name="message_text">
+        <property name="Flags" value="100020" />
+        <property name="PosX" value="39" />
+        <property name="PosY" value="76" />
+        <property name="SizeX" value="196" />
+        <property name="SizeY" value="17" />
+    </node>
+    <node type="Button" name="ok">
+        <property name="BackImage" value="801803600" />
+        <property name="PosX" value="50" />
+        <property name="PosY" value="113" />
+        <property name="SizeX" value="63" />
+        <property name="SizeY" value="25" />
+    </node>
+    <node type="Button" name="cancel">
+        <property name="BackImage" value="801803700" />
+        <property name="PosX" value="148" />
+        <property name="PosY" value="113" />
+        <property name="SizeX" value="64" />
+        <property name="SizeY" value="25" />
+    </node>
+</node>
