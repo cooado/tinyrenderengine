@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>RenderEngine</ProjectName>
+    <ProjectGuid>{CB2F662A-B283-4038-9A2E-91456BEA0456}</ProjectGuid>
+    <RootNamespace>TinyRenderEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\PropertySheets\Release_DirectX.props" />
+    <Import Project="..\..\PropertySheets\Release_ColladaDom.props" />
+    <Import Project="..\..\PropertySheets\Release_TinyRT.props" />
+    <Import Project="..\..\PropertySheets\Release_OIS.props" />
+    <Import Project="..\..\PropertySheets\Release_Boost.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\PropertySheets\Debug_DirectX.props" />
+    <Import Project="..\..\PropertySheets\Debug_ColladaDom.props" />
+    <Import Project="..\..\PropertySheets\Debug_TinyRT.props" />
+    <Import Project="..\..\PropertySheets\Debug_OIS.props" />
+    <Import Project="..\..\PropertySheets\Debug_Boost.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\..\Bin\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\ColladaOptimizer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/NODEFAULTLIB:msvcrt.lib %(AdditionalOptions)</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\ColladaOptimizer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BasicMath.cpp" />
+    <ClCompile Include="ControllerManager.cpp" />
+    <ClCompile Include="ConvertUTF.c" />
+    <ClCompile Include="ImageSpaceSubsurfaceScattering.cpp" />
+    <ClCompile Include="Importer_Dom.cpp" />
+    <ClCompile Include="ProgressiveMesh.cpp" />
+    <ClCompile Include="RenderPipeline.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="TinyRenderEngine.cpp" />
+    <ClCompile Include="VolumeDecalRenderer.cpp" />
+    <ClCompile Include="VSM.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Include\ConvertUTF.h" />
+    <ClInclude Include="..\..\Include\StringConverter.h" />
+    <ClInclude Include="BasicMath.h" />
+    <ClInclude Include="ControllerManager.h" />
+    <ClInclude Include="ConvertUTF.h" />
+    <ClInclude Include="ImageSpaceSubsurfaceScattering.h" />
+    <ClInclude Include="Importer_Dom.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="Platform.h" />
+    <ClInclude Include="Prerequisites.h" />
+    <ClInclude Include="ProgressiveMesh.h" />
+    <ClInclude Include="RenderPipeline.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="StringConverter.h" />
+    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="TinyRenderEngine.h" />
+    <ClInclude Include="UtilityFunctions.h" />
+    <ClInclude Include="VolumeDecalRenderer.h" />
+    <ClInclude Include="VSM.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Media\Shader\ColladaCommonEffect.fx" />
+    <None Include="..\..\..\Media\Shader\ImageSpaceSubsurfaceScattering.fx" />
+    <None Include="..\..\..\Media\Shader\MouseShader.fx" />
+    <None Include="..\..\..\Media\Shader\VolumeDecal.fx" />
+    <None Include="..\..\..\Media\Shader\VSM.fx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ColladaOptimizer\ColladaOptimizer.vcxproj">
+      <Project>{8e1ce379-ab19-4901-a34e-4f324d66c2eb}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
