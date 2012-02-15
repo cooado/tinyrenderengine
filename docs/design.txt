@@ -1,0 +1,52 @@
+1. Purporse
+	The purporse of the tiny render engine project is to create a barebone framework for fast prototyping.
+	
+2. Component
+	The project is consisted of 3 components: 
+		* Engine
+		* Editor
+		* Client Appication
+
+2.1 Engine
+	The engine provides the basic functionality for a game. The following functionality is needed:
+		* Threading Mode
+		* Render
+		* Audio
+		* Physics
+		* Serialisation
+		
+		2.1 Threading Model
+			The engine consists of 3 main loops:
+				* Logic Loop
+					The logic loop runs in the main thread and handles functions like data save/load, net work communication, user input handling, main game logic, etc. It has a messaging mechanism to communicate with other loops.
+				* Render Loop
+					Runs in a seperate thread and takes care of the rendering job. It has a messaging mechanism to communicate with other loops.
+				* Physics Loop
+					Runs in a seperate thread and takes care of the physics simulation. It has a messaging mechanism to communicate with other loops.
+					
+		2.2 Render
+			Provides the following funcitonality:
+				* Forward rendering with basic blinn-phong render support.
+				* Both 2D & 3D render.
+				
+		2.3 Audio
+			Provides simple abstraction with FMOD as the underlying sound engine and editing tool.
+			
+		2.4 Physics
+			Provides simple abstraction with Bulleton as the underlying physics engine.
+			
+		2.5 Serialisation
+			Provides a serialisation method for easy save & load. Provides a file system for the management of local files, including both normal files and packaged files.
+			
+		
+3. Core Classes
+	3.1 Object
+			Serves as the basic unit of a map and provides functions like render entity, 3D sound, navigation point, etc. Every object has a bounding box and resides in a space. Every object can be saved as a object template as a file in the file system, or in a space template file in a file system without the seperate existence of a object template. Object has a hierarchical structure so it may have a parent or several children. However, cyclic reference is not allowed.
+	3.2 Object Template
+			An object template is the representation of an object by the form of a file in a file system. Object templates could be instantiated multiple times across other space or objects.
+	3.3 Space
+			Serves as the container of objects with hierarchical structure. A space is presented by a file in a file system. A space may contain objects and other spaces. Each space has its own coordinat system which resides in the coordinate system of its parent space if it has one. It has a hierarchical strucsture so it may have a parent and several children. However, cyclic reference is not allowd.
+	3.4 Space template
+			A space template is a file in a file system that represents a certain space. It could be instantiated multiple time or be referenced multiple times by other space.
+	3.5 Loop
+			Loop is the representation of a inifinite loop with the same life-time as the running process. It contains a messaging mechanism to communicate with other loops.
