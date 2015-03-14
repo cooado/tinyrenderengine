@@ -1,0 +1,1 @@
+The purpose of this project is to create a 3D render engine for efficient technical demonstration.
